@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <style>
+      header {
+        border: 3px hidden brown;
+        height: 30px;
+      }
+      header div {
+        position: relative;
+        display: inline;
+        padding: 16px;
+        border: 1px hidden black;
+        bottom: 30px;
+      }
+      .logo-box {
+        top: -16px;
+        width: 28px;
+        left: 130px;
+      }
+      .searchbar {
+        bottom: 38px;
+        left: 250px;
+      }
+      .icon {
+        left: 300px;
+        width: 10px;
+      }
+      input[type="button"] {
+        left: 100px;
+        width: 155px;
+        height: 26px;
+        border: hidden;
+      }
+      input[class="text"] {
+        width: 400px;
+        height: 20px;
+        border: hidden;
+      }
+      .searchicon {
+        position: relative;
+        right: 29px;
+        top: 10px;
+        background-color: black;
+        border: hidden;
+      }
+      .categories {
+        position: relative;
+        width: 300px;
+        height: 500px;
+        border: 2px hidden;
+        margin-left: 90px;
+        margin-top: 20px;
+        background-color: rgb(248, 243, 243);
+      }
+      input[type="button1"] {
+        width: 296px;
+        height: 50px;
+        background-color: black;
+        color: white;
+        font-size: 16px;
+        border: hidden;
+        text-align: center;
+        text-decoration: none;
+      }
+      .categories div {
+        padding: 15px;
+        border: 1px solid rgb(241, 236, 236);
+      }
+      .categories div:nth-child(1) {
+        background-color: black;
+        color: white;
+      }
+      .categories > div:hover {
+        background-color: rgb(231, 229, 226);
+        cursor: pointer;
+      }
+      .navbar {
+        position: relative;
+        left: 440px;
+        top: -500px;
+        /* border: 1px hidden black; */
+        width: 850px;
+        height: 503px;
+        overflow: hidden;
+        /* border: 1px solid black; */
+        background-color: rgb(248, 243, 243);
+      }
+      nav {
+        position: relative;
+        /* border: 1px hidden black; */
+        height: 50px;
+        background-color: white;
+      }
+      .navbar a {
+        float: left;
+        font-size: 16px;
+        color: black;
+        text-align: center;
+        text-decoration: none;
+        padding: 8px 16px;
+        background-color: white;
+      }
+      .drop {
+        float: left;
+        overflow: hidden;
+      }
+      .drop .dropbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: black;
+        padding: 8px 8px;
+        margin: 0px;
+        background-color: white;
+      }
+      .navbar a:focus,
+      .drop:focus .dropbtn {
+        color: red;
+      }
+      .navbar a:hover,
+      .drop:hover .dropbtn {
+        color: red;
+      }
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: white;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+      .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 8px 8px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+      .dropdown-content a {
+        background-color: white;
+      }
+      .drop:hover .dropdown-content {
+        display: block;
+      }
+      .rest {
+        position: relative;
+        top: 8px;
+      }
+      .categories div img {
+        float: left;
+        padding-left: 18px 8px;
+        margin-right: 10px;
+      }
+      div.languages {
+        border: 1px solid black;
+      }
+      div > .icn2 a {
+        float: left;
+        left: 50px;
+        border: 1px hidden;
+        padding: 0px;
+        margin: 8px;
+      }
+      div.select {
+        position: relative;
+        font-size: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      select {
+        float: right;
+        bottom: 40px;
+        width: 150px;
+        height: 40px;
+        border: 1px solid azure;
+        border-radius: 30px;
+        text-align: center;
+        text-decoration: none;
+        padding: 8px;
+        cursor: pointer;
+      }
+      .icn {
+        position: relative;
+        padding: 5px;
+        top: 5px;
+      }
+      option[class="lang"] {
+        background-color: red;
+        font-size: 16px;
+        text-align: left;
+      }
+      .container {
+        position: relative;
+        display: flex;
+        top: -430px;
+        margin-left: 90px;
+        border: 1px hidden azure;
+        width: 1180px;
+        padding: 8px;
+        height: 100px;
+      }
+      .container .box {
+        width: 1200px;
+        position: relative;
+        border: 1px solid rgb(241, 236, 236);
+        padding: 28px;
+        text-align: left;
+        height: 40px;
+      }
+      .iconbox {
+        float: left;
+        padding: 16px;
+        margin-top: -10px;
+      }
+      .inside {
+        position: relative;
+        border: 1px hidden black;
+        float: left;
+        height: 447px;
+        width: 847px;
+      }
+      .call {
+        float: left;
+      }
+      .bed {
+        position: relative;
+        float: right;
+        margin-top: -200px;
+        bottom: 100px;
+        
+      }
+
+      .words {
+        border: 1px hidden black;
+        position: relative;
+        top: 60px;
+        height: 300px;
+        padding: 16px;
+        margin-left: 8px;
+      }
+      .words {
+        position: relative;
+      }
+      .organic {
+        border: 1px solid black;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        width: 150px;
+        height: 8px;
+        padding-top: 8px;
+        padding-bottom: 16px;
+        padding-left: 8px;
+        padding-right: 8px;
+        border-radius: 30px;
+      }
+      .See {
+        border: 1px solid black;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        width: 150px;
+        height: 16px;
+        padding-top: 8px;
+        padding-bottom: 16px;
+        padding-left: 8px;
+        padding-right: 8px;
+        color: white;
+        background-color: black;
+        align-content: center;
+      }
+      .anim {
+        color: black;
+        animation-name: anim;
+        animation-duration: 3s;
+        animation-delay: 0s;
+        animation-timing-function: ease;
+        animation-direction: normal;
+        animation-iteration-count: 1;
+        animation-fill-mode: backwards;
+        text-shadow: 5px 5px 5px gray;
+      }
+      @keyframes anim {
+        0% {
+          letter-spacing: 1.6em;
+          color: white;
+        }
+        100% {
+          letter-spacing: 0.1em;
+          color: orange;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="main-header">
+      <!-- logo -->
+      <div class="logo-box">
+        <a href="Homepage.html"><img src="logo (1).png" alt="" /></a>
+      </div>
+      <!-- search -->
+      <div class="searchbar">
+        <input type="button" value="Search For Product" />
+        <input class="text" type="text" placeholder="Search Product" />
+        <!-- search icon -->
+        <iconify-icon
+          class="searchicon"
+          icon="majesticons:search-line"
+          style="color: white"
+          width="28px"
+        ></iconify-icon>
+      </div>
+      <!-- left bar icon -->
+      <div class="icon">
+        <iconify-icon
+          icon="majesticons:search-line"
+          style="color: black"
+          width="28px"
+        ></iconify-icon>
+        <iconify-icon
+          icon="arcticons:contacts-alt"
+          style="color: black"
+          width="28px"
+        ></iconify-icon>
+        <iconify-icon
+          icon="icon-park-outline:like"
+          style="color: black"
+          width="28px"
+        ></iconify-icon>
+        <iconify-icon
+          icon="ci:bell-notification"
+          style="color: black"
+          width="28px"
+        ></iconify-icon>
+      </div>
+    </header>
+    <div class="categories">
+      <input type="button1" value="SELECT CATEGORIES" />
+      <div><img src="court.png" alt="" /> Court Cupboard</div>
+      <div><img src="cock.png" alt="" />Cockfighting Chair</div>
+      <div><img src="menu-icon-3.png" alt="" />Platform Rocker</div>
+      <div><img src="chest.png" alt="" />Chest Of Drawers</div>
+      <div><img src="menu-icon-5.png" alt="" />Dressing Table</div>
+      <div><img src="menu-icon-6.png" alt="" />Grandfather Clock</div>
+      <div><img src="" alt="" />Penbroke Table</div>
+      <div><img src="../menu-icon-7.png" alt="" />Early American Funiture</div>
+      <div><img src="../menu-icon-8.png" alt="" />Shaker Funiture</div>
+    </div>
+    <div class="navbar">
+      <nav>
+        <div class="drop Home">
+          <button class="dropbtn">
+            <a href="#"
+              >Home
+              <iconify-icon
+                icon="gridicons:dropdown"
+                style="color: black"
+              ></iconify-icon>
+            </a>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Home2</a>
+            <a href="#">Home3</a>
+          </div>
+        </div>
+        <div class="rest">
+          <a href="#">About</a>
+        </div>
+        <div class="drop shop">
+          <button class="dropbtn">
+            <a href="#"
+              >Shop
+              <iconify-icon
+                icon="gridicons:dropdown"
+                style="color: black"
+              ></iconify-icon>
+            </a>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">shop1</a>
+            <a href="#">shop2</a>
+          </div>
+        </div>
+        <div class="drop blog">
+          <button class="dropbtn">
+            <a href="#"
+              >Blog
+              <iconify-icon
+                icon="gridicons:dropdown"
+                style="color: black"
+              ></iconify-icon>
+            </a>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">blog1</a>
+            <a href="#">blog2</a>
+          </div>
+        </div>
+        <div class="rest">
+          <a href="#">Contact Us</a>
+        </div>
+        <div class="Languages">
+          <div class="navicon">
+            <div class="icn2">
+              <a href="#" class="facebook">
+                <iconify-icon
+                  class="icn"
+                  icon="basil:facebook-solid"
+                ></iconify-icon>
+              </a>
+              <a href="#" class="twitter"
+                ><iconify-icon
+                  class="icn"
+                  icon="icon-park-solid:twitter"
+                ></iconify-icon
+              ></a>
+              <a href="#" class="web"
+                ><iconify-icon class="icn" icon="mdi:web"></iconify-icon
+              ></a>
+              <a href="#" class="linkedin"
+                ><iconify-icon
+                  class="icn"
+                  icon="akar-icons:linkedin-fill"
+                ></iconify-icon
+              ></a>
+            </div>
+            <div class="select">
+              <select name="Language" id="country">
+                <option class="lang" value="Yoruba">Yoruba</option>
+                <option class="lang" value="English">English</option>
+                <option class="lang" value="German">German</option>
+                <option class="lang" value="French">French</option>
+                <option class="lang" value="Arabic">Arabic</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="inside">
+        <div class="words call">
+          <div class="organic">100% Organic Food</div>
+          <h1 class="anim">Funiture Collection</h1>
+          <p class="anim">Increase productivity with a simple to-do app</p>
+          <h4 class="anim">
+            Starting From <em style="color: red; font-size: 20px">$560.99</em>
+          </h4>
+          <div class="See">
+            See Collection
+            <iconify-icon
+              icon="teenyicons:arrow-right-small-solid"
+              style="color: white"
+            ></iconify-icon>
+          </div>
+        </div>
+        <div class="bed call"><img src="bed.png" alt="" /></div>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <div class="container">
+      <div class="box">
+        <iconify-icon
+          icon="mdi:lorry-fast"
+          style="color: black"
+          width="36px"
+          height="30px"
+          class="iconbox"
+        ></iconify-icon>
+        <b>Free Shipping</b><br />
+        Free Shipping over $100
+      </div>
+      <div class="box">
+        <iconify-icon
+          icon="clarity:lock-line"
+          style="color: black"
+          width="36px"
+          height="30px"
+          class="iconbox"
+        ></iconify-icon>
+        <b>Payment Secure</b><br />
+        Get 100% Payment Safe
+      </div>
+      <div class="box">
+        <iconify-icon
+          icon="simple-line-icons:earphones-alt"
+          style="color: black"
+          class="iconbox"
+          width="36px"
+          height="30px"
+        ></iconify-icon>
+        <b>Support 24/7</b><br />
+        Top quality 24/7 Support
+      </div>
+      <div class="box">
+        <iconify-icon
+          icon="et:wallet"
+          style="color: black"
+          width="36px"
+          height="30px"
+          class="iconbox"
+        ></iconify-icon>
+        <b>100% Money Back</b><br />
+        Customers Money Backs
+      </div>
+    </div>
+  </footer>
+</html>

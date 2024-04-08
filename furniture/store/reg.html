@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            position: relative;
+            border: 1px hidden black;
+            height: 50px;
+            box-shadow: 0px 2px 0px 0px whitesmoke;
+        }
+        header img{
+            margin-top: -16px;
+            float: left;
+            padding-left: 50px;
+        }
+        .header-one{
+            float: right;
+            padding-left: 50px;    
+        }
+        .header-one a{
+            padding: 15px;
+            text-decoration: none;
+            color: black;
+            font-family: "jost", sans-serif;
+            font-weight: bolder;
+        }
+        .auto-container{
+            position: static;
+            max-width: 1340px;
+            padding: 0px 15px;
+            margin: 0 auto;
+        }
+        h4{
+         font-weight: 700;
+         color: black;
+         margin-bottom: 30;
+         font-family: 'josefin';
+         line-height: 1.4em;
+        }
+        label{
+            position: relative;
+            display: block;
+            font-weight: 1000;
+            font-size: 16;
+            margin-bottom: 15;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"]
+        {
+            position: relative;
+            display: block;
+            width: 50%;
+            background: white;
+            line-height: 50px;
+            padding: 8px 30px;
+            height: 80px;
+            font-weight: 400;
+            border-radius: 50px;
+            font-size: 15;
+            border: 2px solid #f4f4f4;
+            color: rgb(161,161,161);
+        }
+        .checkbox{
+            line-height: 24px;
+            font-size: 15;
+            font-weight: normal;
+            padding-top: 5;
+        }
+        .check-box label{
+            position: relative;
+            display: flex;
+            width: 100%;
+            line-height: 22px;
+            padding: 4px 10px 0px;
+            padding-left: 25px;
+            background: #ffffff;
+            font-size: 16px;
+            font-weight: 400;
+            color: #4e4f51;
+            cursor: pointer;
+            margin-bottom: 0;
+        }
+        a{
+            text-decoration: none;
+            cursor: pointer;
+            color: red;
+        }
+        button{
+             font-weight: 100;
+             height: 50px;
+             width: 90px;
+             border-radius: 50px;
+             background-color: black;
+             color: white;
+             text-transform: capitalize;
+             font-family: 'inter', sans-serif;
+        }
+       .styled-form{
+        float: right;
+        padding-left: 100px;
+        
+       }
+    </style>
+</head>
+    <header>
+        <div class="logo"> <img src="logo.png" alt=""></div>
+        <div class="header-one">
+            <a href="#">Home</a> <a href="#">About</a> <a href="#">Shop</a>
+            <a href="#">Blog</a> <a href="#">Contact us</a>
+        </div>
+    </header>
+        <br>
+        <br>
+        <div class="auto-container"></div>
+        <div class="inner-container"></div>
+        <h4>Sign Up</h4>
+		<form method="" action="">
+            <div class="form-group">
+                <label>Your Name</label>
+                <input type="text" name="username" value="" placeholder="Enter your name*" required>
+            </div>
+            <div class="form-group">
+                <label>Email address</label>
+                <input type="email" name="emaill" value="" placeholder="Enter Email Adress" required>
+            </div>
+            <div class="form-group">
+                <label>New Password</label>
+                <input type="password" name="password" value="" placeholder="Create password" required>
+            </div>
+            <div class="form-group">
+                <div class="check-box">
+                    <input type="checkbox" name="remember-password" id="type-1"> 
+                    <label for="type-1">I agree to al <a href="#">Terms</a> & <a href="#">Condition</a> and Feeds</label>
+                </div>
+            </div><br>
+            <div class="form-group">
+                <button type="button" class="theme-btn btn-style-one">
+                    Sign Up
+                </button>
+            </div>
+        </form>
+    </div>
+    <div class="column"></div>
+    <div class="styled-form"></div>
+    <h4>Login here</h4>
+    <form method="post" action="index.html">
+        <div class="form-group">
+            <label>Email address</label>
+            <input type="email" name="emaill" value="" placeholder="Enter Email Adress" required>
+        </div>
+        <div class="form-group">
+            <label>New Password</label>
+            <input type="password" name="password" value="" placeholder="Create password" required>
+        </div>
+        <div class="form-group">
+            <div class="check-box">
+                <input type="checkbox" name="remember-password" id="type-2">
+                <label for="type-2">Remember Me?</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <button type="button" class="theme-btn btn-style-one">
+                Login here
+            </button>
+        </div>
+    </form>
+
+</body>
+</html>

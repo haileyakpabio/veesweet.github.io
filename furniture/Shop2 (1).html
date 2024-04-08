@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,600;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      header {
+        position: relative;
+        border: 1px hidden black;
+        height: 30px;
+        box-shadow: 0px 2px 0px 0px lightgray;
+      }
+      header img {
+        margin-top: -16px;
+        float: left;
+        padding-left: 50px;
+      }
+      .header1 {
+        float: right;
+        padding-right: 50px;
+      }
+      .header1 a {
+        padding: 10px;
+        text-decoration: none;
+        color: black;
+        font-family: "Jost", sans-serif;
+        font-weight: bolder;
+      }
+      .header1 a:hover {
+        color: red;
+      }
+      .header1 a:focus {
+        color: red;
+      }
+      .main {
+        position: relative;
+        display: flex;
+        float: left;
+        border: 1px hidden black;
+      }
+      .main .ashchair {
+        padding-left: 50px;
+        padding-top: 60px;
+        padding-right: 60px;
+        border: 1px hidden rgb(20, 20, 138);
+      }
+      .content-column {
+        padding-right: 60px;
+        padding-left: 60px;
+        padding-top: 60px;
+        border: 1px hidden rgb(28, 28, 107);
+      }
+      .middle-chairs {
+        padding-top: 60px;
+        display: grid;
+      }
+      .middle-chairs img {
+        border: 1px solid rgb(247, 247, 248);
+        color: whitesmoke;
+        transition: all 500ms ease;
+        transition-duration: 500ms;
+        transition-timing-function: ease-in-out;
+        transition-delay: 0s;
+      }
+      .middle-chairs img:hover {
+        color: white;
+        background-color: black;
+        border: 1px solid black;
+      }
+      .inner-column h3 {
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 30px;
+      }
+      .inner-column span {
+        display: inline-block;
+        font-family: "FontAwesome";
+        font-weight: normal;
+        font-style: normal;
+        padding-bottom: 10px;
+        font-size: 20px;
+      }
+      div i {
+        margin-left: 10px;
+        font-size: 14px;
+        font-weight: bold;
+        font-family: "Jost", sans-serif;
+        margin-top: 15px;
+      }
+      .price {
+        padding-bottom: 10px;
+        font-family: "Jost", sans-serif;
+        font-size: 16px;
+        font-weight: bolder;
+        font-weight: 14px;
+        margin-top: 25px;
+        margin-bottom: 15px;
+      }
+      .price span {
+        opacity: 0.5;
+        margin: 0px 5px;
+        text-decoration: line-through;
+        font-size: 13px;
+      }
+      .price i {
+        border: 1px solid black;
+        padding: 5px;
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+      .text {
+        opacity: 0.8;
+        line-height: 30px;
+        font-size: 15px;
+        margin-bottom: 25px;
+      }
+      .flex {
+        display: flex;
+      }
+      .model {
+        margin-top: 8px;
+        margin-right: 15px;
+        padding-right: 10px;
+        font-family: "Jost", sans-serif;
+        font-weight: bold;
+      }
+      .select-size-box {
+        display: flex;
+        margin-top: 5px;
+        margin-right: 15px;
+        float: left;
+      }
+      .select-size-box .select-box {
+        border: 1px hidden black;
+        margin: 0px 10px 10px 0px;
+        color: gray;
+        padding: 0px 5px 0px 5px;
+        background-color: rgb(237, 237, 237);
+      }
+      .select-box input[type="radio"] {
+        position: absolute;
+        visibility: hidden;
+        opacity: 9;
+        padding: 0px;
+      }
+      .select-box label {
+        display: block;
+        line-height: 24px;
+        /* padding-top: 4px;
+        padding-bottom: 4px; */
+        padding-right: 16px;
+        padding-left: 16px;
+        color: rgb(141, 136, 132);
+        text-align: center;
+        font-family: "Jost", sans-serif;
+      }
+      .content-column .categories {
+        position: relative;
+        font-weight: 300px;
+        font-size: 15px;
+        margin-top: 15px;
+        font-family: "Jost", sans-serif;
+      }
+      .content-column .categories span {
+        position: relative;
+        font-weight: bold;
+        font-size: 16px;
+      }
+      .content-column .social-box {
+        position: relative;
+        margin-top: 20px;
+        margin-bottom: 25px;
+      }
+      ul,
+      li {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: inline-block;
+        margin-right: 15px;
+      }
+      .content-column .social-box li {
+        margin-right: 15px;
+      }
+      .content-column .social-box li.share {
+        font-weight: bold;
+        font-size: 16px;
+      }
+      .content-column .social-box li a {
+        color: black;
+      }
+      a iconify-icon:hover {
+        color: red;
+      }
+      input[type="button"] {
+        width: 180px;
+        height: 50px;
+        font-size: 15px;
+        font-weight: 500;
+        border: 0px;
+        color: white;
+        background: black;
+        transition: all 500ms ease;
+        transition-property: background;
+        transition-duration: 500ms;
+        transition-timing-function: ease-in-out;
+        transition-delay: 0s;
+      }
+      input[type="button"]:hover {
+        background-color: red;
+      }
+      .lower {
+        position: absolute;
+        top: 650px;
+        left: 50px;
+        margin: 20px;
+      }
+      .lower .lower-btn1 {
+        list-style-type: none;
+      }
+      .lower .lower-btn1 .lower-btn2 {
+        position: relative;
+        display: inline-block;
+        background: rgb(255, 255, 255);
+        line-height: 24px;
+        padding: 14px 44px;
+        border: 1px solid hidden;
+        font-family: "Jost", sans-serif;
+        font-weight: 500;
+        font-weight: bold;
+      }
+      .lower-btn1 .lower-btn2 {
+        transition: all 500ms ease;
+        color: black;
+        transition-duration: 500ms;
+        transition-timing-function: ease-in-out;
+        transition-delay: 0s;
+      }
+      .lower-btn1 .lower-btn2:hover {
+        color: white;
+        background-color: black;
+        border: 1px solid black;
+      }
+      .lower-btn {
+        position: relative;
+        display: inline-block;
+        background: black;
+        line-height: 24px;
+        padding: 14px 44px;
+        border: 1px solid hidden;
+        font-family: "Jost", sans-serif;
+        font-weight: 500;
+        color: white;
+        font-weight: bold;
+      }
+      .quantity {
+        position: relative;
+        float: right;
+        right: 230px;
+        bottom: 35px;
+        border: 1px hidden black;
+      }
+      .item-quantity {
+        border: 1px hidden black;
+      }
+      input[class="spinner"] {
+        width: 15px;
+        background-color: lightgray;
+        border: hidden;
+        text-align: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+      .add{
+        background-color: white;
+        border: 1px solid white;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo"> <img src="logo (1).png" alt="" srcset="">
+
+      </div>
+      <div class="header1">
+        <a href="#">Home</a> <a href="#">About</a> <a href="#">Shop</a>
+        <a href="#">Blog</a> <a href="#">Contact Us</a>
+      </div>
+    </header>
+    <div class="main">
+      <div><img class="ashchair" src="assh.png" alt="" /></div>
+      <div class="middle-chairs">
+        <img src="glasstab.png" alt="" /><img
+          src="witeychair.png"
+          alt=""
+        /><img src="woodtab.png" alt="" /><img
+          src="pinkey.png"
+          alt=""
+        />
+      </div>
+      <div class="content-column">
+        <div class="inner-column">
+          <h3>Accesories Lather Shoes</h3>
+          <!-- Rating -->
+          <span
+            ><iconify-icon
+              icon="typcn:star"
+              style="color: #ff9923"
+            ></iconify-icon
+          ></span>
+          <span
+            ><iconify-icon
+              icon="typcn:star"
+              style="color: #ff9923"
+            ></iconify-icon
+          ></span>
+          <span
+            ><iconify-icon
+              icon="typcn:star"
+              style="color: #ff9923"
+            ></iconify-icon
+          ></span>
+          <span
+            ><iconify-icon
+              icon="typcn:star"
+              style="color: #ff9923"
+            ></iconify-icon
+          ></span>
+          <span
+            ><iconify-icon
+              icon="typcn:star"
+              style="color: #d2d3d6"
+            ></iconify-icon
+          ></span>
+          <i>(4 customer review)</i>
+        </div>
+        <!-- Price -->
+        <div class="price">$16.00 <span>$32.00</span> <i>-34%</i></div>
+        <div class="text">
+          Rorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore.
+        </div>
+        <div class="flex">
+          <div class="model">
+            <span class="model-title">Model:</span>
+          </div>
+          <!-- Select Size -->
+          <div class="select-size-box">
+            <div class="select-box">
+              <input
+                type="radio"
+                name="payment-group"
+                id="radio-one"
+                checked=""
+              /><label for="radio-one">TYK</label>
+            </div>
+            <div class="select-box">
+              <input type="radio" name="payment-group" id="radio-two" /><label
+                for="radio-two"
+                >FFD2</label
+              >
+            </div>
+            <div class="select-box">
+              <input type="radio" name="payment-group" id="radio-three" /><label
+                for="radio-three"
+                >23TT</label
+              >
+            </div>
+            <div class="select-box">
+              <input type="radio" name="payment-group" id="radio-four" /><label
+                for="radio-four"
+                >R454</label
+              >
+            </div>
+            <div class="select-box">
+              <input type="radio" name="payment-group" id="radio-five" /><label
+                for="radio-five"
+                >45HY</label
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Categories -->
+        <div class="categories">
+          <span>Categories :</span> All, Featured, Medical, Covid-19 Mask
+        </div>
+        <!-- Tags -->
+        <div class="categories">
+          <span>Tags :</span> Black, Brown, Red, Shoes, £0.00 - £150.00
+        </div>
+        <ul class="social-box">
+          <li class="share">Share:</li>
+          <li>
+            <a href="#"><iconify-icon icon="bxl:facebook"></iconify-icon></a>
+          </li>
+          <li>
+            <a href="#"><iconify-icon icon="la:twitter"></iconify-icon></a>
+          </li>
+          <li>
+            <a href="#"><iconify-icon icon="mdi:web"></iconify-icon></a>
+          </li>
+          <li>
+            <a href="#"
+              ><iconify-icon icon="ri:linkedin-fill"></iconify-icon
+            ></a>
+          </li>
+        </ul>
+        <div><input type="button" value="ADD TO CART" /></div>
+        <div class="quantity">
+          <div class="item-quantity">
+            <button type="button" class="add" value="-">-</button>
+            <input class="spinner" type="text" value="1" name="quantity" />
+            <button type="button" class="add" value="+">+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="lower">
+      <ul class="lower-btn1">
+        <li class="lower-btn">PRODUCT DETAILS</li>
+        <li class="lower-btn2">ADDITIONAL INFORMATION</li>
+        <li class="lower-btn2">REVIEW</li>
+        <li class="lower-btn2">FAQ</li>
+      </ul>
+    </div>
+  </body>
+</html>

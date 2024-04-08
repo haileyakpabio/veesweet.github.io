@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            body{
+                height: auto;
+                width: 1rem;
+            }
+        .auto-container{
+            position: static;
+            box-sizing: border-box;
+            width: 1200px;
+            margin: 0 10px;
+            padding: 2px;
+        }
+        .inner-container{
+            height: 350px;
+            position: relative;
+            padding: 2px 0px 10px 10px;
+            background-color: rgb(247,247,248);
+            
+        }
+        .shape-layer{
+            position: absolute;
+            left: 0px;
+            top: -50px;
+            right: 0px;
+            height: 82px;
+            background-repeat: repeat-x;
+        } 
+        .title{
+            position: relative;
+            display: block;
+            font-weight: 500;
+            font-size: 14px;
+            color: rgb(237,29,36);
+            margin-top: 50px;
+            margin-right: -120px;
+        }
+        h2{
+            font-weight: 500;
+            font-size: 34px;
+            color: black;
+            text-transform: capitalize;
+            margin-top: 10px;
+            font-family: "josefin sans" sans-serif;
+        }
+        .deals{
+            position: relative;
+            display: block;
+            font-weight: 500;
+            font-size: 20px;
+            color: rgb(18,20,22);
+            margin-top: 15px;
+        }
+        .deals span{
+            position: relative;
+            color: rgb(237,29,36);
+        }
+        .shop-now{
+            position: relative;
+            font-weight: 500;
+            display: inline-block;
+            font-size: 14px;
+            color: black;
+            text-transform: uppercase;
+            margin-top: 45px;
+            font-family: 'Jost', sans-serif;
+            padding-right: 25px;
+        }
+        .arrow{
+            position: absolute;
+            left: 32%;
+            bottom: 5%;
+            width: 126px;
+            height: 128px;
+            background-repeat: no-repeat;
+        }
+        img{
+            display: inline-block;
+            max-width: 100%;
+            height: auto;
+        }
+        .shadow-layer{
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            right: -115px;
+            bottom: 0px;
+            z-index: -1;
+            background-position: center top;
+            background-repeat: no-repeat;
+        }
+        .image{
+            margin-top: -200px;
+            margin-right: -250px;
+            position: relative;
+            text-align: center;
+            z-index: 1;
+        }
+        .price-tag{
+            position: relative;
+            border: 1px hidden black;
+            width: 60px;
+            height: 50px;
+            font-weight: 700;
+            font-size: 24px;
+            padding: 20px 10px 10px;
+            z-index: 1;
+            top: -120px;
+            left: 500px;
+            bottom: 10px;
+            background-image: url(price-tag.png);
+            background-repeat: no-repeat;
+            color: white;
+        }
+        .sup{
+            position: relative;
+            top: 1px;
+            font-size: 12px;
+            margin-left: 5px;
+        }
+        .price-tag p{
+            font-weight: 500;
+            font-size: 14px;
+            text-decoration: line-through;
+            margin-top: -5px;
+        }
+        .sec-title{
+            position: relative;
+            margin-bottom: 30px;
+        }
+        .sec-title h4{
+            font-weight: 300;
+            padding-left: 20px;
+            margin-top: 50px;
+            color: black;
+            display: inline-block;
+            text-transform: capitalize;
+        }
+        .sec-title span{
+            font-weight:800;
+        }
+        .filters{
+            float: right;
+            padding-left: 50px;
+            margin-top: -98px;
+        }
+        .filters li.active{
+            color: rgb(18,20,22);
+            border-color: rgb(237,29,36);
+        }
+        .filters li {
+            display: inline-block;
+            padding: 15px;
+            color: rgb(148,147,146);
+            font-size: 16px;
+            cursor: pointer;
+            text-transform: capitalize;
+            font-family: 'jost', sans-serif;
+            border-bottom: 1px solid transparent;
+            font-weight: 400;
+        }
+        .shop-item{
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .inner-box{
+            position: relative;
+        }
+        .box{
+            border: 1px solid black;
+        }
+        </style>
+    </head>
+<body>
+    <div class="auto-container">   
+        <div class="inner-container"><div>
+            <div class="shape-layer" style="background-image: url(patternash.png)"></div>
+                <div class="title-column">
+                    <div class="title">2021 Collection</div>
+                    <h2>mens Black Meta Sunglass</h2>
+                    <div class="deals">Deals <span>35% Flat</span></div>
+                    <a class="shop-now" href="">Shop Now</a>
+                    <div class="arrow">
+                        <img src="arrow-1.png" alt="" />
+                    </div>
+                </div>
+                <div class="image">
+                    <div class="shadow-layer" style="background-image: url(patternred.png)"></div>
+                    <img src="chair.png" alt="" />
+                    <div class="price-tag">
+                        99<sup>$</sup>
+                        <p>103</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="auto-container">
+            <div class="sec-title"><h4><span>Products </span> your choich !</div>
+        </div>
+        <div class="filters">
+            <ul class="filter-tabs">
+                <li class="active filter" data-role="button" data-filter="all">Trending</li>
+                <li class="filter" data-role="button" data-filter=".bestseller">Best Seller</li>
+                <li class="filter" data-role="button" data-filter=".music">music</li>
+                <li class="filter" data-role="button" data-filter=".photography">photography</li>
+                <li class="filter" data-role="button" data-filter=".sports">sports</li>
+            </ul>
+        </div> 
+    </div>
+    <div class="shop-item" style="display: inline-block;">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+    </div>  
+</body>
+</html>

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        font-weight: 500;
+        line-height: 1.4em;
+    }
+    header{
+        position: relative;
+        border: 1px hidden black;
+        height: 50px;
+        box-shadow: 0px 2px 0px 0px whitesmoke;
+    }
+    header img{
+        margin-top: -16px;
+        float: left;
+        padding-left: 50px;
+    }
+    .header1{
+        float: right;
+        padding-left: 50px;    
+     }
+    .header1 a{
+        padding: 15px;
+        text-decoration: none;
+        color: black;
+        font-family: "jost", sans-serif;
+        font-weight: bolder;
+    }
+    .container{
+        position: relative;
+        border: none;
+        top: 10px;
+        padding: auto;
+
+    }
+    .box1{
+        position: absolute;
+        padding: auto;
+        border: 1px hidden black;
+        font-family: "jost", sans-serif;
+    }
+    .box2{
+        position: relative;
+        padding: auto;
+        border: 1px hidden black;
+        font-family: "jost", sans-serif;
+        float: right;
+    }
+    .cart
+    .calculator {
+        position: relative;
+        border: 1px hidden black;
+    }
+    input[class="qty-spinner"] {
+        width: 15px;
+        background-color: whitesmoke;
+        border: hidden;
+        text-align: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        cursor: pointer;
+    }
+    image{
+        position: relative;
+        float: left;
+        margin-left: 0px;
+        margin-top: -30px;
+        margin-bottom: 20px;
+        top: 45px;
+    }
+    .prod{
+        position: relative;
+        float: right;
+        padding-left: 20px;
+        text-align: left;
+        top: -26px;
+    }
+    table tr th{
+        border: 1px hidden black;
+    }
+    th,
+    td {
+        position: relative;
+        width: 15vw;
+        text-align: center;
+        margin-top: -10px;
+    }
+    .image > img{
+        position: relative;
+        width: 70px;
+        height: 65px;
+        border: ;
+    }
+
+
+</style>
+<body>
+    <header>
+        <div class="logo"><img class="logo" src="logo (1).png"></div>
+        <div class="header1">
+            <a href="#">Home</a> <a href="#">About</a> <a href="#">Shop</a>
+            <a href="#">Blog</a> <a href="#">Contact us</a>
+        </div>
+    </header>
+    <div class="container">
+        <div class="box1">
+            <table>
+                <div class="column">
+                    <tr>
+                        <th>Product</th>
+                        <th>price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                    </tr>
+                </div>
+                <div class="column">
+                    <tr>
+                        <td>
+                            <div class="image">
+                                <img src="woodtab.png" alt="">
+                                <span class="cross-icon flaticon-cancel-1"></span>
+                            </div>
+                            <div class="prod one">
+                                <h6>Logtech Headphone</h6>
+                                <div class="prod-text">
+                                    color : Brown <br />
+                                     Quantity : 2
+                                </div>
+                            </div>
+                        </td>
+                        <td class="price">$32.00</td>
+                        <td>
+                          <div class="item-quantity">
+                            <button type="button" class="add" value="-">-</button>
+                            <input class="qty-spinner" type="text" value="1" name="quantity" />
+                            <button type="button" class="add" value="+">+</button>
+                        </div>
+                    </td>
+                    <td class="total">£219.00</td>
+                </tr>
+            </div>
+            <div class="column">
+                <tr>
+                    <td>
+                        <div class="image">
+                            <img src="41.png" alt="">
+                            <span class="cross-icon flaticon-cancel-1"></span>
+                        </div>
+                        <div class="prod title">
+                            <h6>Asus Vivobook</h6>
+                            <div class="prod-text">
+                                color : Brown <br> Quantity : 2
+                            </div>
+                        </div>
+                     </td>
+                     <td class="price">$19.00</td>
+                     <td>
+                        <div class="item-quantity">
+                            <button type="button" class="add" value="-">-</button>
+                            <input class="qty-spinner" type="text" value="1" name="quantity">
+                            <button type="button" class="add" value="+">+</button>
+                        </div>
+                    </td>
+                    <td class="total">£318.00</td>
+                </tr>
+                </div>
+                <div class="column">
+                    <tr>
+                        <td>
+                <div class="image">
+                  <img src="42.png" alt="">
+                  <span class="cross-icon flaticon-cancel-1"></span>
+                </div>
+                <div class="prod title">
+                    <h6>Woolen Huddle</h6>
+                    <div class="prod-text">
+                        color ; Brown <br> Quantity : 2
+                    </div>
+                </div>
+             </td>
+             <td class="price">$21.00</td>
+             <td>
+                <div class="item-quantity">
+                    <button type="button" class="add" value="-">-</button>
+                    <input class="qty-spinner" type="text" value="1" name="quantity">
+                    <button type="button" class="add" value="+">+</button>
+                </div>
+            </td>
+            <td class="total">£12.00</td>
+        </tr>
+        </div>
+        <div class="column">
+            <tr>
+                <td>
+        <div class="image">
+            <img src="43.png" alt="">
+            <span class="cross-icon flaticon-cancel-1"></span>
+          </div>
+          <div class="prod title">
+              <h6>Woolen Huddle</h6>
+              <div class="prod-text">
+                  color ; Brown <br> Quantity : 2
+              </div>
+          </div>
+       </td>
+       <td class="price">$46.00</td>
+       <td>
+          <div class="item-quantity">
+              <button type="button" class="add" value="-">-</button>
+              <input class="qty-spinner" type="text" value="1" name="quantity">
+              <button type="button" class="add" value="+">+</button>
+          </div>
+      </td>
+      <td class="total">£412.00.00</td>
+      </tr>
+      </div>
+      <div class="column">
+        <tr>
+            <td>
+                <div class="image">
+                    <img src="44.png" alt="">
+                    <span class="cross-icon flaticon-cancel-1"></span>
+                  </div>
+                  <div class="prod title">
+                      <h6>Woolen Huddle</h6>
+                      <div class="prod-text">
+                          color ; Brown <br> Quantity : 2
+                          </div>
+                        </div>
+                    </td>
+                    <td class="price">$13.00</td>
+                    <td>
+                       <div class="item-quantity">
+                           <button type="button" class="add" value="-">-</button>
+                           <input class="qty-spinner" type="text" value="1" name="quantity">
+                           <button type="button" class="add" value="+">+</button>
+                       </div>
+                       </td>
+                       <td class="total">£21.00</td>
+                    </tr>
+                </div>
+                <div class="column">
+                  <tr>
+                      <td>
+                          <div class="image">
+                              <img src="45.png" alt="">
+                              <span class="cross-icon flaticon-cancel-1"></span>
+                            </div>
+                            <div class="prod title">
+                                <h6>Woolen Huddle</h6>
+                                <div class="prod-text">
+                                    color ; Brown <br> Quantity : 2
+                                    </div>
+                                  </div>
+                              </td>
+                              <td class="price">$13.00</td>
+                              <td>
+                                 <div class="item-quantity">
+                                     <button type="button" class="add" value="-">-</button>
+                                     <input class="qty-spinner" type="text" value="1" name="quantity">
+                                     <button type="button" class="add" value="+">+</button>
+                                 </div>
+                                 </td>
+                                 <td class="total">£21.00</td>
+                                </tr>
+                            </div>
+                        </table>
+                    </div>
+                    <div class="boxT">
+                        <div class="cart">
+                            <div class="title">
+                                <h6>Chart Totals</h6>
+                            </div>
+                            <div class="cartbox">
+                                <ul>
+                                    <li>Subtotals : <span>£381.00</span></li>
+									<li>Totals : <span>£381.00</span></li>
+								</ul>
+								<div class="check-box">
+									<input type="checkbox" name="remember-password" id="type-1"> 
+									<label for="type-1">Shipping & taxes calculated at checkout</label>
+                                </div>
+								<div class="buttons-box">
+										Procced To Cheackout
+                            </div>
+                        </div>
+                        <div class="calculator">
+                        <div class="title-box">
+								<h6>Calculate Shipping</h6>
+							</div>
+							<div class="shipping">
+								<ul>
+									<li>Bangladesh</li>
+									<li>Mirpur Dohs Dhaka-1200</li>
+									<li>Postal Code</li>
+								</ul>
+								<div class="buttons-box">
+										Calculate Shiping</div>
+                                    </div>
+</body>
+</html>
